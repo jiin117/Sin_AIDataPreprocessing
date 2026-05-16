@@ -4,21 +4,6 @@ class MedianFilter:
         self.input_img = input_img
         self.outline = self.filterer - 1
         self.medianValue = int((self.filterer - 1) / 2)
-    # def select_sort_4_for(self, in_data):
-    #     arr = in_data.copy()
-    #     for row in range(self.filterer):
-    #         for col in range(self.filterer):
-    #             for row1 in range(self.filterer):
-    #                 for col1 in range(self.filterer):
-    #                     if row1 == row and col1 > col and arr[row, col] > arr[row1, col1]:
-    #                         temp = arr[row, col]
-    #                         arr[row, col] = arr[row1, col1]
-    #                         arr[row1, col1] = temp
-    #                     elif row1 > row and arr[row, col] > arr[row1, col1]:
-    #                         temp = arr[row, col]
-    #                         arr[row, col] = arr[row1, col1]
-    #                         arr[row1, col1] = temp
-    #     return arr[self.medianValue, self.medianValue]
 
     def select_sort_list(self, in_data):
         arr = in_data.copy()
